@@ -21,7 +21,7 @@ const LoginPage = () => {
         </div>
 
         
-        <a href="#" class="btn"> Click Me</a>
+        <a href="#" className="btn"> Click Me</a>
 
       </div>
       

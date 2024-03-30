@@ -147,4 +147,97 @@ body {
   width: 220px;
 }
 
+
+/* search feeld */
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 650px;
+  padding: 25px;
   
+}
+
+.search-input {
+  width: 600px;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f3f4;
+  color: #0d0c22;
+  transition: 0.3s ease;
+  font-size: 18px;
+  
+}
+
+.search-input::placeholder {
+  color: #9e9ea7;
+}
+
+.search-input:focus,
+search-input:hover {
+  outline: none;
+  border-color: #007bff;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(247 127 0 / 10%);
+}
+
+.search-input-icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+  padding: 25px;
+}
+/* serch Button */
+.search-button {
+  font-size: 18px;
+  padding: 0.5em 2em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  background: rgba(30, 143, 255, 0.559);
+  color: white;
+  border-radius: 4px;
+  margin-left: 10px;
+ }
+ 
+ .search-button:hover {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+ }
+ 
+ .search-button:active {
+  transform: translate(0em, 0.2em);
+ }
+
+/* end serch button */
+
+/* pay-more button */
+.Pay-More-button {
+  font-size: 18px;
+  padding: 0.5em 4em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  background: rgba(30, 143, 255, 0.559);
+  color: white;
+  border-radius: 4px;
+  margin-left: 250px;
+  
+  
+ }
+ 
+ .Pay-More-button:hover {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+ }
+ 
+ .Pay-More-button:active {
+  transform: translate(0em, 0.2em);
+ } 
+/* end Search field */
