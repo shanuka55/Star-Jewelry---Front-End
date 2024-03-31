@@ -14,7 +14,7 @@ const SideBar = () => {
     <aside id='sidebar'>
       <div className='sidebar-title'>
         <div className='sidebar-brand'>
-          <IoIosStar className="icon"/> JEWELRY
+          NEW <IoIosStar className="icon" style={{color: 'goldenrod'}}/> STAR JEWELRY
         </div>
         <span className='icon close_icon'>X</span>
       </div>
@@ -44,6 +44,14 @@ const SideBar = () => {
           <Link to='/DashBoard/CustomerDetails'>
             <MdPeopleAlt className="icon"/> Customer Details
           </Link>
+        </li>
+        <li className='sidebar-list-item'>
+          <button>
+          <Link to='/DashBoard/CustomerDetails'>
+            <MdPeopleAlt className="icon"/> Customer Details
+          </Link>
+          </button>
+          
         </li>
       </ul>
     </aside>

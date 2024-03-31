@@ -10,7 +10,7 @@ const CustomerDetails = () => {
       <main className='main-container'>
 
         <div className='main-title'>
-          <h3>Customer Details</h3>
+          <h3>CUSTOMER DETAILS</h3>
         </div>
 
         </main>

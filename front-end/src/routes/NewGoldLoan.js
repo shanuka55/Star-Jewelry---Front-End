@@ -11,7 +11,7 @@ const NewGoldLoan = () => {
       <main className='main-container'>
 
         <div className='main-title'>
-          <h3>New Gold Loan</h3>
+          <h3>NEW GOLD LOAN</h3>
         </div>
 
         </main>

@@ -10,7 +10,7 @@ const RenewalLoan = () => {
       <main className='main-container'>
 
         <div className='main-title'>
-          <h3>Renewal Loan</h3>
+          <h3>RENAWAL LOAN</h3>
         </div>
 
         </main>

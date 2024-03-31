@@ -11,7 +11,7 @@ const LoanDetails = () => {
     <main className='main-container'>
 
       <div className='main-title'>
-        <h3>Loan Details</h3>
+        <h3>LOAN DETAILS</h3>
       </div>
 
       </main>
