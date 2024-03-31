@@ -1,14 +1,16 @@
-import React from 'react'
-import DashBoardPage from '../components/DashBoardPage'
-import SideBar from '../components/SideBar'
+import React from 'react';
+import Header from '../components/Header';
+import SideBar from '../components/SideBar';
+import '../components/DashBoardPageStyle.css';
 
 const DashBoard = () => {
   return (
-    <div>
-        
-        <DashBoardPage/>
+    <div className='grid-container'>
+      <Header/>
+      <SideBar />
+      
     </div>
   )
 }
 
-export default DashBoard
+export default DashBoard;

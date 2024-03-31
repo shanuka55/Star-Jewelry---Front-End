@@ -1,77 +1,53 @@
-import React from 'react'
-import { Bs123 } from 'react-icons/bs';
-import { IoIosStar } from "react-icons/io";
+import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { AiFillGold } from "react-icons/ai";
 import { MdOutlinePayment } from "react-icons/md";
-import { MdPeopleAlt } from "react-icons/md";
 import { RiCalendarEventFill } from "react-icons/ri";
 import { BiSolidDetail } from "react-icons/bi";
-import { AiFillGold } from "react-icons/ai";
+import { MdPeopleAlt } from "react-icons/md";
+import { IoIosStar } from "react-icons/io";
 import "./SideBarStyle.css";
 
-
-const SideBar = ({ setActiveComponent }) => {
-    const handleLinkClick = (component) => {
-        setActiveComponent(component);
-      };
+const SideBar = () => {
+    // const navigate = useNavigate();
   return (
     <aside id='sidebar'>
-        <div className='sidebar-title'>
-            <div className='sidebar-brand'>
-                <IoIosStar className="icon"/> JEWELRY
-            </div>
-            <span className='icon close_icon'>X</span>
+      <div className='sidebar-title'>
+        <div className='sidebar-brand'>
+          <IoIosStar className="icon"/> JEWELRY
         </div>
+        <span className='icon close_icon'>X</span>
+      </div>
 
-        <ul className='sidebar-list'>
-            <li className='sidebar-list-item'>
-                <a href='#' >
-                    <AiFillGold className="icon"/> New Gold Loan
-                </a>     
-            </li>
-            <li className='sidebar-list-item'>
-                <a href='#' onClick={() => handleLinkClick('payment')}>
-                    <MdOutlinePayment className="icon"/> Make a Payment
-                </a>     
-            </li>
-            <li className='sidebar-list-item'>
-                <a href='#'>
-                    <RiCalendarEventFill className="icon"/> Renewal Loan
-                </a>     
-            </li>
-            <li className='sidebar-list-item'>
-                <a href='#'>
-                    <BiSolidDetail className="icon"/> Loan Deatails
-                </a>     
-            </li>
-            <li className='sidebar-list-item'>
-                <a href='#'>
-                    <MdPeopleAlt className="icon"/> Customer Deatails
-                </a>     
-            </li>
-            <li className='sidebar-list-item'>
-                <a href='#'>
-                    <Bs123 className="icon"/>DashBoard
-                </a>     
-            </li>
-            <li className='sidebar-list-item'>
-                <a href='#'>
-                    <Bs123 className="icon"/>DashBoard
-                </a>     
-            </li>
-            <li className='sidebar-list-item'>
-                <a href='#'>
-                    <Bs123 className="icon"/>DashBoard
-                </a>     
-            </li>
-            <li className='sidebar-list-item'>
-                <a href='#'>
-                    <Bs123 className="icon"/>DashBoard
-                </a>     
-            </li>
-            
-        </ul>
+      <ul className='sidebar-list'>
+        <li className='sidebar-list-item'>
+          <Link to='/DashBoard/NewGoldLoan'>
+            <AiFillGold className="icon"/> New Gold Loan
+          </Link>
+        </li>
+        <li className='sidebar-list-item'>
+          <Link to='/DashBoard/MakePayment'>
+            <MdOutlinePayment className="icon"/> Make a Payment
+          </Link>
+        </li>
+        <li className='sidebar-list-item'>
+          <Link to='/DashBoard/RenewelLoan'>
+            <RiCalendarEventFill className="icon"/> Renewal Loan
+          </Link>
+        </li>
+        <li className='sidebar-list-item'>
+          <Link to='/DashBoard/LoanDetails'>
+            <BiSolidDetail className="icon"/> Loan Details
+          </Link>
+        </li>
+        <li className='sidebar-list-item'>
+          <Link to='/DashBoard/CustomerDetails'>
+            <MdPeopleAlt className="icon"/> Customer Details
+          </Link>
+        </li>
+      </ul>
     </aside>
   )
 }
 
-export default SideBar
+export default SideBar;
