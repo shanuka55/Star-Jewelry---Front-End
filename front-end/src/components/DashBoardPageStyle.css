@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #1d2634;
-    color: #9e9ea4;
+    background-color: #ffffff;
+    color: #000000;
     font-family: 'Montserrat', sans-serif;
   }
 
@@ -24,6 +24,7 @@ body {
     justify-content: space-between;
     padding: 0 30px 0 30px;
     box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+    
     
 }
 
@@ -98,20 +99,22 @@ body {
   /* Input container */
 .input-container {
   position: relative;
-  margin: 20px;
+  margin: 40px;
+  
 }
 
 /* Input field */
 .input-field {
   display: block;
-  width: 200px;
+  width: 220px;
   padding: 10px;
   font-size: 16px;
   border: none;
   border-bottom: 2px solid #ccc;
   outline: none;
   background-color: transparent;
-  color: white;
+  color: rgb(0, 0, 0);
+  
 }
 
 /* Input label */
@@ -140,11 +143,12 @@ body {
 .input-field:focus + .input-label {
   top: -20px;
   font-size: 12px;
-  color: #007bff;
+  color: #000000;
+  font-weight: 700;
 }
 
 .input-field:focus + .input-label + .input-highlight {
-  width: 220px;
+  width: 240px;
 }
 
 
@@ -168,7 +172,7 @@ body {
   border: 2px solid transparent;
   border-radius: 8px;
   outline: none;
-  background-color: #f3f3f4;
+  background-color: #cbcbcd;
   color: #0d0c22;
   transition: 0.3s ease;
   font-size: 18px;
@@ -201,7 +205,7 @@ search-input:hover {
   padding: 0.5em 2em;
   border: transparent;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-  background: rgba(30, 143, 255, 0.559);
+  background: rgba(30, 143, 255, 0.844);
   color: white;
   border-radius: 4px;
   margin-left: 10px;
@@ -224,7 +228,7 @@ search-input:hover {
   padding: 0.5em 4em;
   border: transparent;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-  background: rgba(30, 143, 255, 0.559);
+  background: rgba(30, 143, 255, 0.844);
   color: white;
   border-radius: 4px;
   margin-left: 250px;

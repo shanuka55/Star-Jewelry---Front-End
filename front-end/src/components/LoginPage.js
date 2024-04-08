@@ -11,7 +11,7 @@ const LoginPage = () => {
 
       <div className='login-Section'>
         <div className='login-name'>
-          <h1><IoIosStar />Jewelry</h1>
+          <h1>Administrator Login</h1>
         </div>
         
 

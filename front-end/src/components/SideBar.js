@@ -45,14 +45,7 @@ const SideBar = () => {
             <MdPeopleAlt className="icon"/> Customer Details
           </Link>
         </li>
-        <li className='sidebar-list-item'>
-          <button>
-          <Link to='/DashBoard/CustomerDetails'>
-            <MdPeopleAlt className="icon"/> Customer Details
-          </Link>
-          </button>
-          
-        </li>
+      
       </ul>
     </aside>
   )
