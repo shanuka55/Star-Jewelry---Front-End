@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #f9facc3b;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
   }
@@ -99,10 +99,15 @@ body {
   /* Input container */
 .input-container {
   position: relative;
-  margin: 40px;
+  margin: 30px;
   
 }
-
+/* main-title */
+.main-title{
+  color: #000000;
+  margin: 20px;
+}
+/* End-main-title */
 /* Input field */
 .input-field {
   display: block;
@@ -135,7 +140,7 @@ body {
   left: 0;
   height: 2px;
   width: 0;
-  background-color: #007bff;
+  background-color: #006eff;
   transition: all 0.3s ease;
 }
 
@@ -153,7 +158,7 @@ body {
 
 
 /* search feeld */
-.group {
+.Search-Loan-number {
   display: flex;
   line-height: 28px;
   align-items: center;
@@ -326,3 +331,71 @@ search-input:hover {
 
 
 /* endchchBox */
+
+.new-gold-loan-conatiner {
+  overflow-y:hidden;
+  overflow-x: hidden;
+  z-index: -1;
+}
+
+/* Customer-deatails-container */
+
+.Customer-deatails-container {
+  position: relative;
+  left: 40%;
+  bottom: 600px;
+}
+.Search-Customer {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 650px;
+  padding: 20px;
+  
+}
+ 
+.search-button {
+  font-size: 18px;
+  padding: 0.5em 2em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  background: rgba(30, 143, 255, 0.844);
+  color: white;
+  border-radius: 4px;
+  margin-left: 10px;
+ }
+ 
+ .search-button:hover {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+ }
+ 
+ .search-button:active {
+  transform: translate(0em, 0.2em);
+ }
+
+ /* Add-customer-button */
+
+ .Add-customer-button {
+  font-size: 18px;
+  padding: 0.5em 4em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  background: rgba(30, 143, 255, 0.844);
+  color: white;
+  border-radius: 4px;
+  margin-left: 250px; 
+ }
+ 
+ .Add-customer-button:hover {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+ }
+ 
+ .Add-customer-button:active {
+  transform: translate(0em, 0.2em);
+ } 
+
+/* End-Customer-deatails-container */
+
