@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/Header';
 import SideBar from '../components/SideBar';
 import "../components/DashBoardPageStyle.css";
+import { IoMdAddCircleOutline } from "react-icons/io";
 
 
 const NewGoldLoan = () => {
@@ -97,7 +98,7 @@ const NewGoldLoan = () => {
                 <span className="input-highlight"></span>
           </div>
 
-          <button class="Add-customer-button">Add</button>
+          <button class="Add-customer-button"><IoMdAddCircleOutline /> <i></i>Add</button>
 
         </div>
         </main>

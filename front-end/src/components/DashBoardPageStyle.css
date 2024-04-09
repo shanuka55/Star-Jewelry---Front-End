@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f9facc3b;
+    background-color: #e0e0da;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
   }
@@ -117,7 +117,7 @@ body {
   border: none;
   border-bottom: 2px solid #ccc;
   outline: none;
-  background-color: transparent;
+  background-color: #ffffff8a;
   color: rgb(0, 0, 0);
   
 }
@@ -214,6 +214,8 @@ search-input:hover {
   color: white;
   border-radius: 4px;
   margin-left: 10px;
+  width: 200px;
+  height: 40px;
  }
  
  .search-button:hover {
@@ -227,29 +229,57 @@ search-input:hover {
 
 /* end serch button */
 
-/* pay-more button */
-.Pay-More-button {
+/* Payment-button button */
+.Payment-button {
   font-size: 18px;
   padding: 0.5em 4em;
   border: transparent;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-  background: rgba(30, 143, 255, 0.844);
+  background: linear-gradient(90deg, rgb(66, 16, 128) 0%, rgb(88, 2, 135) 100%);
   color: white;
   border-radius: 4px;
   margin-left: 250px;
-  
-  
  }
  
- .Pay-More-button:hover {
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+ .Payment-button:hover {
+  background: rgb(22, 0, 36);
+  background: linear-gradient(90deg, rgb(131, 30, 255) 0%, rgb(166, 0, 255) 100%);
  }
  
- .Pay-More-button:active {
+ .Payment-button:active {
   transform: translate(0em, 0.2em);
  } 
 /* end Search field */
+
+/* Paymnet-lable */
+.payment-lable {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 40px;
+  gap: 20px;
+}
+.text-in-payment {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #555;
+  outline: none;
+}
+
+.text-in-payment:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+/* end Paymnet-lable */
+/* payment-input */
+.payment-input {
+  position: relative;
+  margin-left: 500px;
+  bottom: 150px;
+}
+/* end payment-input */
 
 
 

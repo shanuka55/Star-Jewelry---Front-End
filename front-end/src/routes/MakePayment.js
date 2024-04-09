@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from '../components/Header';
 import SideBar from '../components/SideBar';
+import { FaSearch } from "react-icons/fa";
+import { MdOutlinePayment } from "react-icons/md";
 
 
 const MakePayment = () => {
@@ -27,29 +29,32 @@ const MakePayment = () => {
                 </svg>
                 
                 <input className="search-input" type="search" placeholder="Loan Number" />
-                <button class="search-button">search</button>
-                <button class="Pay-More-button">PayMore</button>
+                <button class="search-button"><FaSearch /> search</button>
 
             </div>
           </div>
         
 
+          <div className='payment-lable'>
+            <input placeholder="Blance Amount" className="text-in-payment" type="text"/>
+            <input placeholder="End Date" className="text-in-payment" type="text"/>
+            <input placeholder="Last Payment Date" className="text-in-payment" type="text"/>
+          </div>
 
-          <div class="input-container">
-            <input placeholder="Loan Number" class="input-field" type="text"/>
-            <label for="input-field" class="input-label">Enter Loan Number</label>
-            <span className="input-highlight"></span>
+          <div className='payment-input'>
+            <div class="input-container">
+                <input placeholder="Payment Amount" class="input-field" type="text"/>
+                <label for="input-field" class="input-label">Enter Payment Amount</label>
+                <span className="input-highlight"></span>
+            </div>
+            <div class="input-container">
+                <input placeholder="Description" class="input-field" type="text"/>
+                <label for="input-field" class="input-label">Enter Description</label>
+                <span className="input-highlight"></span>
+            </div>
+            <button class="Payment-button"><MdOutlinePayment />Payment</button>
           </div>
-          <div class="input-container">
-            <input placeholder="Loan Number" class="input-field" type="text"/>
-            <label for="input-field" class="input-label">Enter Loan Number</label>
-            <span class="input-highlight"></span>
-          </div>
-          <div class="input-container">
-            <input placeholder="Loan Number" class="input-field" type="text"/>
-            <label for="input-field" class="input-label">Enter Loan Number</label>
-            <span class="input-highlight"></span>
-          </div>
+          
 
         </div>
         </main>
