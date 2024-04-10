@@ -52,7 +52,7 @@ const MakePayment = () => {
                 <label for="input-field" class="input-label">Enter Description</label>
                 <span className="input-highlight"></span>
             </div>
-            <button class="Payment-button"><MdOutlinePayment />Payment</button>
+            <button class="Payment-button"><MdOutlinePayment /> Payment</button>
           </div>
           
 

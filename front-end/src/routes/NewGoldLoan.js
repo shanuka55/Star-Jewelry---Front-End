@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import SideBar from '../components/SideBar';
 import "../components/DashBoardPageStyle.css";
 import { IoMdAddCircleOutline } from "react-icons/io";
+import { FaSearch } from "react-icons/fa";
 
 
 const NewGoldLoan = () => {
@@ -64,7 +65,7 @@ const NewGoldLoan = () => {
                   </svg>
                   
                   <input className="search-input" type="search" placeholder="Search Customer" />
-                  <button class="search-button">search</button>
+                  <button class="search-button"><FaSearch /> search</button>
           </div>
           
           <div class="input-container">
